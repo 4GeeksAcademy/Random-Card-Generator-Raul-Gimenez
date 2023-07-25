@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Random Card</title>
-</head>
-<body>
-  <main class="main">
-    <div class="card">
-      <div class="flip-card">
-        <div class="card-back">
-          
-        </div>
-        <div class="card-front">
-          <div>
-
-          </div>
-          <h1>
-            
-          </h1>
-          <div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <title>Random Card</title>
+    <script src="app.js" type="module"></script>
+  </head>
+  <body>
+    <main class="mainCard">
+      <div class="card" onclick="location.reload()">
+        <div class="cardInner">
+          <div class="cardBack"></div>
+          <div class="cardFront">
+            <div id="upCardColor"></div>
+            <div class="numberContainer">
+              <div id="frontNumber"></div>
+            </div>
+            <div id="bottomCardColor"></div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
