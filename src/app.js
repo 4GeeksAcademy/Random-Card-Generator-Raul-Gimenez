@@ -4,12 +4,10 @@ import { asignColor } from "./components/asignColor.js";
 
 const cardColorElement = cardColor();
 const frontNumber = document.querySelector("#frontNumber");
-const upCardColor = document.querySelectorAll("#upCardColor, #bottomCardColor");
-//const bottomCardColor = document.querySelector("#bottomCardColor");
+const upAndBottomCardColor = document.querySelectorAll("#upCardColor, #bottomCardColor");
 
 frontNumber.append(cardNumber());
-upCardColor.forEach((element) => {
+upAndBottomCardColor.forEach((element) => {
   return element.append(asignColor(cardColorElement));
 });
 
-//bottomCardColor.append(asignColor(cardColorElement));
