@@ -93,6 +93,6 @@ body {
   color: red;
 }
 
-.cardInner:active {
+.cardInner:hover {
   transform: rotateY(-180deg);
 }
